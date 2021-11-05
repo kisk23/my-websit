@@ -1,0 +1,102 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1.1fr 0.1fr;
+    grid-template-rows: 1.5fr 0.1fr 0.1fr 0.4fr 2.7fr 0.1fr 2.9fr 0.1fr 1fr 3.5fr;
+    grid-auto-columns: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "website website ."
+      ". . ."
+      "links links ."
+      ". . ."
+      "titleheading div ."
+      ". div ."
+      "title-heading-2 div ."
+      ". . ."
+      "footer footer ."
+      ". . .";
+  }
+  
+  .website { grid-area: website;
+
+background-color:rgb(255,255,255) ;}
+  
+  .links { grid-area: links; 
+background-color:rgb(52,52,52) ;
+display: flex;
+}
+  
+  .titleheading { grid-area: titleheading;
+background-color: white; }
+  
+  .title-heading-2 { grid-area: title-heading-2;
+    background-color: white; }
+  
+  .div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.8fr 0.1fr 1.5fr 0.9fr 1.1fr;
+    gap: 1px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "about-me about-me"
+      ". ."
+      "popular-post popular-post"
+      "popular-post popular-post"
+      "follow-me follow-me";
+    grid-area: div;
+  }
+  
+  .about-me { grid-area: about-me;
+  
+    background-color: white;}
+  
+  .popular-post { grid-area: popular-post;
+    background-color: white; }
+  
+  .follow-me { grid-area: follow-me; 
+    background-color: white;}
+  
+  .footer { grid-area: footer; 
+  background-color: rgb(221,221,221);}
+  
+  body{
+      background-color: rgb(241,241,241);
+  }
+  h1{
+    text-align: center;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+  .social{
+    list-style: none;
+    display:inline-block; 
+  }
+  a {
+    
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.parent{
+    display: flex;
+}
+.child {
+    margin-left: auto;
+    order: 2;
+  }
+  .c {
+    position: absolute;
+    right: 0;
+  }
+  .small {
+      font-size: 12px;
+  }
+  .image{background-color: grey;
+height: fit-content;}
